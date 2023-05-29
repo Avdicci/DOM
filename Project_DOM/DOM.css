@@ -1,0 +1,120 @@
+body{
+    transition-duration: 0.5s;
+}
+
+/* Display: flex; för att få innehållet under varandra */
+#header
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1vw;
+}
+
+/* display: none; för att den ska starta gömd, font-size: 2vw; så den är responsiv */
+#vibes
+{
+    display: none;
+    font-size: 2vw;
+}
+
+/* display: none; för att den ska starta gömd, font-size: 2vw; så den är responsiv */
+#time
+{
+    display: none;
+    font-size: 1.25vw;
+}
+
+/* width: 10%; för storlek och responsiv */
+#image
+{
+    width: 10%;
+}
+
+/* För att göra knapparna att centrera på sidan */
+#button_alignment
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/* Bakgrunden för knapparna */
+#button_background
+{
+    background-color: lightyellow;
+    width: 40vw;
+    height: 20vw;
+    /* För att göra det till flex */
+    display: flex;
+    /* Knapparna inte ska åka utanför bakgrunden */
+    flex-wrap: wrap;
+    /* För att få knappkolumnerna på rad */
+    flex-direction: row;
+    /* För att centrera */
+    justify-content: center;
+    align-content: center;
+}
+
+/* För att få knapparna under varandra */
+.column
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* knapparna */
+button
+{
+    /* Bakgrundsfärg */
+    background-color: lightskyblue;
+    /* Storlek, responsiv (vw) */
+    width: 7vw;
+    height: 4.5vw;
+    /* Margins mellan knapparna och sidan av bakgrunden */
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    /* För att centrera texten */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Runda hörn på knapparna */
+    border-radius: 1vw;
+    /* Texten ska stanna innuti knapparna */
+    flex-wrap: wrap;
+    /* Ta bort borde på knapparna */
+    border: none;
+    /* Färg på texten */
+    color: white;
+    /* Storlek på texten och för att få de responsiva */
+    font-size: 1.5vw;
+    /* För att få en mjuk transition efter att har svävat över */
+    transition: 0.1s;
+
+}
+
+/* För att ändra knappen när man svävar över den */
+button:hover
+{
+    /* Ändrar bakgrunden */
+    background-color: rgb(142, 58, 221);
+    /* Hur lång transition det ska vara */
+    transition: 0.5s;
+    /* Text storleken ändras */
+    font-size: 1.75vw;
+}
+
+/* För att centrera */
+#thanks_alignment
+{
+    display: flex;
+    justify-content: center;
+}
+
+/* Färg och storlek på text */
+#thanks
+{
+    color: rgb(235, 177, 32);
+    font-size: 1.5vw;
+}
